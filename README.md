@@ -1,4 +1,3 @@
-# DIPNet
-Repo for Dual Information Pathways Network (DIPNet) which developed to represent imagined speech EEG
+## Spectro-Spatio-Temporal EEG Representation Learning for Imagined Speech Recognition
+<p align="center"><img width="90%" src="files/dipnet.png" /></p>
 
-It will be updated soon.
