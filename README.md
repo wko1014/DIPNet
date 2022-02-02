@@ -18,3 +18,15 @@ This repository provides a TensorFlow implementation of the following paper:
 ## Downloading datasets
 To download 2020 International BCI Competition Track 3 dataset
 * https://osf.io/pq7vb/
+
+## Usage
+`network.py` contains the proposed deep learning architectures, `utils.py` contains functions used for experimental procedures, `experiment.py` contains the main experimental functions, and `main.py' is the main function.
+
+## Citation
+If you find this work useful for your research, please cite our paper: TBA
+```
+TBA
+```
+
+## Acknowledgements
+This work was supported by Institute for Information & Communications Technology Promotion (IITP) grant funded by the Korea government under Grant 2017-0-00451 (Development of BCI based Brain and Cognitive Computing Technology for Recognizing User’s Intentions using Deep Learning) and Grant 2019-0-00079 (Department of Artificial Intelligence, Korea University).
