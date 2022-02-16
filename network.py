@@ -90,7 +90,7 @@ class MSNN(tf.keras.Model):
         # Concatenating features to exploit temporal-spatial information and spatio-temporal information
         feature = tf.concat((f1_TS, f2_TS, f3_TS, f_ST), -1)
 
-        # Global average pooling
+        # Global average pooling (can be changed to adpative average pooling)
         feature = tf.reduce_mean(feature, -2)
         return feature
 
