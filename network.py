@@ -87,7 +87,7 @@ class MSNN(tf.keras.Model):
         f_ST = self.l_relu(self.conv2t_ST(f_ST))
         f_ST = self.l_relu(self.conv3t_ST(f_ST))
 
-        # Concatenation
+        # Concatenating features to exploit temporal-spatial information and spatio-temporal information
         feature = tf.concat((f1_TS, f2_TS, f3_TS, f_ST), -1)
 
         # Global average pooling
