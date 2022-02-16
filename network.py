@@ -71,7 +71,7 @@ class MSNN(tf.keras.Model):
     def embedding(self, x):
         f = self.l_relu(self.conv0(x))
 
-        # Temporal-spatial path
+        # Temporal-spatial path, multi-scale representation
         f_TS = self.l_relu(self.conv1t_TS(f))
         f1_TS = self.l_relu(self.conv1s_TS(f_TS))
 
