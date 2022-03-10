@@ -35,7 +35,7 @@ class experiment():
         self.optimizer = tf.keras.optimizers.Adam(learning_rate=self.lr)
 
     def training(self):
-        # print(f"Start Training, Subject {self.sbj_idx}")
+        # print(f"Start Training, Subject {self.sbj_idx}") # just to check
 
         # Load dataset
         ld = utils.load_dataset(sbj_idx=self.sbj_idx)
