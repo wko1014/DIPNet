@@ -12,8 +12,9 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 # Define the domain for Bayesian optimization and searching areas
 domain = [{'name': 'init_lr', 'type': 'continuous', 'domain': (5e-5, 5e-3)},
-          {'name': 'F0', 'type': 'discrete', 'domain': list(range(2, 9))},
+          {'name': 'F0', 'type': 'discrete', 'domain': list(range(2, 9))}, # for the first convolution
 
+          # for the spatial filtering path
           {'name': 'F1_TS', 'type': 'discrete', 'domain': list(range(8, 17))},
           {'name': 'T1_TS', 'type': 'discrete', 'domain': list(range(10, 21))},
 
@@ -23,6 +24,7 @@ domain = [{'name': 'init_lr', 'type': 'continuous', 'domain': (5e-5, 5e-3)},
           {'name': 'F3_TS', 'type': 'discrete', 'domain': list(range(32, 65))},
           {'name': 'T3_TS', 'type': 'discrete', 'domain': list(range(2, 6))},
 
+          # for the temporal dynamics representation path
           {'name': 'F1_ST', 'type': 'discrete', 'domain': list(range(8, 17))},
           {'name': 'T1_ST', 'type': 'discrete', 'domain': list(range(10, 21))},
           {'name': 'F2_ST', 'type': 'discrete', 'domain': list(range(16, 33))},
