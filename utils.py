@@ -31,16 +31,16 @@ class load_dataset():
         return X, Y
 
     def preprocessing(self, data):
-        # # BPF (30~125Hz, gamma range) using a 4th order Butterworth filter
+        # BPF (30~125Hz, gamma range) using a 4th order Butterworth filter
         # data = filter_data(data, sfreq=256, l_freq=30, h_freq=125, verbose=False)
 
-        # # Remove 60Hz line noise with the 120Hz harmonic
+        # Remove 60Hz line noise with the 120Hz harmonic
         # data = notch_filter(data, Fs=256, freqs=np.arange(60, 121, 60), verbose=False)
 
         # Remove dummy signals after imagined speech performing
         data = data[..., :640]
 
-        # Remove baselines
+        # Reject baselines
         data = data[..., 128:]
 
         # Remove the first and the last 0.5 sec
