@@ -18,7 +18,7 @@ and a submitted paper:
 > (<sup>2</sup>Department of Artificial Intelligence, Korea University) <br/>
 > Official Version: Submitted<br/>
 > 
-> **Abstract:** *Imagined and inner speech have attracted increasing attention in brain--computer interface research circles, owing to its ability to enable direct and intuitive communication between users and external devices. However, as these imagined/inner speech electroencephalograms (EEGs) are created through complex and internal cognitive process, recognizing informative patterns within these unarticulated EEGs is a challenge. In this work, we devise a novel deep convolutional neural network architecture to extract spatial filtering information and temporal dynamics of input imagined/inner speech EEGs. Specifically, we consider two different information representation paths and employ these paths in a unified architecture complementarily, thereby effectively learning complex EEG features. To demonstrate the validity of the proposed network architecture, we conduct subject-dependent and independent classification experiments with comparable state-of-the-art methods on publicly available imagined speech inner speech EEG datasets. Furthermore, we observe that each path used in our architecture learns different information from the input signal through extensive analyses.*
+> **Abstract:** *Imagined and inner speech have attracted increasing attention in brain-computer interface research circles, owing to its ability to enable direct and intuitive communication between users and external devices. However, as these imagined/inner speech electroencephalograms (EEGs) are created through complex and internal cognitive process, recognizing informative patterns within these unarticulated EEGs is a challenge. In this work, we devise a novel deep convolutional neural network architecture to extract spatial filtering information and temporal dynamics of input imagined/inner speech EEGs. Specifically, we consider two different information representation paths and employ these paths in a unified architecture complementarily, thereby effectively learning complex EEG features. To demonstrate the validity of the proposed network architecture, we conduct subject-dependent and independent classification experiments with comparable state-of-the-art methods on publicly available imagined speech inner speech EEG datasets. Furthermore, we observe that each path used in our architecture learns different information from the input signal through extensive analyses.*
 
 ## Dependencies
 * [Python 3.7+](https://www.continuum.io/downloads)
@@ -27,6 +27,9 @@ and a submitted paper:
 ## Downloading datasets
 To download 2020 International BCI Competition Track 3 dataset
 * https://osf.io/pq7vb/
+
+To download Inner Speech EEG dataset
+* https://www.nature.com/articles/s41597-022-01147-2
 
 ## Usage
 `network.py` contains the proposed deep learning architectures, `utils.py` contains functions used for experimental procedures, `experiment.py` contains the main experimental functions, and `main.py' is the main function.
