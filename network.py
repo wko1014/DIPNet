@@ -5,10 +5,10 @@ import tensorflow as tf
 class MSNN(tf.keras.Model):
     tf.keras.backend.set_floatx('float64')
     def __init__(self, F0, F1_TS, T1_TS, F2_TS, T2_TS, F3_TS, T3_TS, F1_ST, T1_ST, F2_ST, T2_ST, F3_ST, T3_ST,
-                 num_channels=64, sample_freq=256):
+                 num_channels=64, sample_freq=256): # tunable parameters optimized by Bayesian HPO
         super(MSNN, self).__init__()
         self.n_c = num_channels # number of electrodes
-        self.f_s = sample_freq
+        self.f_s = sample_freq # samping frequency
 
         # Network hyperparmeter learned by Bayesian optimization
         # Spectral convolution depth
