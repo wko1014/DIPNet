@@ -26,7 +26,7 @@ class MSNN(tf.keras.Model):
         self.regularizer = tf.keras.regularizers.L1L2(l1=.001, l2=.01)
 
         # Activation functions
-        self.l_relu = tf.keras.layers.LeakyReLU()
+        self.l_relu = tf.keras.layers.LeakyReLU() # for intermediate activation
         self.softmax = tf.keras.layers.Softmax()
 
         # Define convolutions
