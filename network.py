@@ -7,7 +7,7 @@ class MSNN(tf.keras.Model):
     def __init__(self, F0, F1_TS, T1_TS, F2_TS, T2_TS, F3_TS, T3_TS, F1_ST, T1_ST, F2_ST, T2_ST, F3_ST, T3_ST,
                  num_channels=64, sample_freq=256):
         super(MSNN, self).__init__()
-        self.n_c = num_channels
+        self.n_c = num_channels # number of electrodes
         self.f_s = sample_freq
 
         # Network hyperparmeter learned by Bayesian optimization
