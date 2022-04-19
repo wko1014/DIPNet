@@ -53,7 +53,7 @@ class load_dataset():
         num_samples = int(X.shape[0]/(5)) # Samples per fold
 
         # Set training/validation/testing data indices
-        rand_idx = np.random.RandomState(seed=951014).permutation(X.shape[0])
+        rand_idx = np.random.RandomState(seed=951014).permutation(X.shape[0]) # to fix data indices
         test_idx = rand_idx[(fold - 1) * num_samples:fold * num_samples]
         train_idx = np.setdiff1d(rand_idx, test_idx)
         valid_idx = np.random.RandomState(seed=5930).permutation(train_idx.shape[0])[:28]
