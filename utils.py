@@ -18,7 +18,7 @@ class load_dataset():
         X_tr, Y_tr = np.array(data_tr['epo_train']['x'])[0, 0], np.array(data_tr['epo_train']['y'])[0, 0]
         X_vl, Y_vl = np.array(data_vl['epo_validation']['x'])[0, 0], np.array(data_vl['epo_validation']['y'])[0, 0]
 
-        del data_tr, data_vl
+        del data_tr, data_vl # for memory reset
 
         # For 5-fold cross-validation
         X = np.concatenate((X_tr, X_vl), axis=-1)
