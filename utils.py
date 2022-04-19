@@ -1,5 +1,5 @@
 # Import APIs
-import scipy.io # To load .mat files
+import scipy.io # To load .mat files (data load)
 import numpy as np
 import tensorflow as tf
 import tensorboard
