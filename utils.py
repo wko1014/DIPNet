@@ -3,7 +3,7 @@ import scipy.io # To load .mat files (data load)
 import numpy as np
 import tensorflow as tf
 
-from mne.filter import filter_data, notch_filter
+from mne.filter import filter_data, notch_filter # for data preprocessing
 
 # Define load imagined speech EEG dataset class
 class load_dataset():
