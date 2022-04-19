@@ -9,7 +9,7 @@ from mne.filter import filter_data, notch_filter # for data preprocessing
 class load_dataset():
     def __init__(self, sbj_idx):
         self.sbj_idx = sbj_idx
-        self.path = '/Define/Your/Own/Path' # Define the data path
+        self.path = '/define/Your/Own/Path' # Define the data path
 
     def load_data(self):
         data_tr = scipy.io.loadmat(self.path + f'Trainingset/Data_Sample{self.sbj_idx:02d}.mat')
