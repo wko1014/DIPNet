@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 
 import experiment
-from GPyOpt.methods import BayesianOptimization
+from GPyOpt.methods import BayesianOptimization # for Bayesian hyperparameter optimization
 
 # To control the GPU
 physical_devices = tf.config.list_physical_devices('GPU')
