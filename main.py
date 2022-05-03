@@ -11,7 +11,7 @@ physical_devices = tf.config.list_physical_devices('GPU')
 tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 # Define the domain for Bayesian optimization and searching areas
-domain = [{'name': 'init_lr', 'type': 'continuous', 'domain': (5e-5, 5e-3)},
+domain = [{'name': 'init_lr', 'type': 'discrete', 'domain': [5e-5, 5e-4, 5e-3]},
           {'name': 'F0', 'type': 'discrete', 'domain': list(range(2, 9))}, # for the first convolution
 
           # for the spatial filtering path
