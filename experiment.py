@@ -1,8 +1,8 @@
 # Import APIs
-import utils
-import network
 import numpy as np
 import tensorflow as tf
+import utils
+import network
 
 from sklearn.metrics import accuracy_score, confusion_matrix
 
